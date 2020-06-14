@@ -1,0 +1,317 @@
+ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-right: 0em;
+	margin-bottom: 1em;
+	margin-left: 1.5em;
+	text-align:justify;
+}
+ul li {margin: 0px 0px 0.5em 0.5em; padding: 0px; list-style: square;}
+
+table {
+	margin: 1em 0; width: 100%; border: 0;
+}
+
+th, td { border: 0; }
+
+#wrap {
+   width:100%;
+   /*margin:2.5em auto;
+	 margin-top: 100vh;*/
+}
+
+#left_col {
+   float:left;
+   width:0%;
+}
+
+#right_col {
+	 /*float: right;
+   width:77%;
+	 margin: 100vh auto;*/
+	 margin: auto;
+	 width:100%;
+	 border-left: dotted 1pt #999;
+	 border-right: dotted 1pt #999;
+	 padding: 1em;
+	 /*background-color: #F5F2F2;*/
+	 background-color: rgba(250,245,245,0.85);
+	 opacity: 1;
+	 min-height: 100%;
+	 line-height: 1.5em;
+}
+
+#navTop {
+	height: 1.2em;
+	width: 100%;
+	top:0;
+	left:0;
+	position:fixed;
+	padding: 0.4em;
+	/* background: #ECE9E9; */
+	background: #FDFAFA;
+	border-bottom: dotted 1pt #666;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-family: Romana, Didot, optima;
+	font-size: 120%;
+	color: #333;
+	opacity: 0.9;
+	z-index: 0;
+}
+
+#footer {
+	height: 1.5em;
+	width: 100%;
+	bottom:0;
+	left:0;
+	position: fixed;
+	padding: 0.25em;
+	background: #FDFAFA;
+	border-top: dotted 1pt #666;
+	text-align: center;
+	font-size: 120%;
+	font-family: Romana;
+	color: #333;
+	letter-spacing: 0.05em;
+	opacity: 0.9;
+}
+
+h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+
+h1 {
+	font-family: 'Romana', didot, optima, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 3.25em;
+	font-weight: 300;
+	color: #444;
+	padding: 0.0em 0px 0.5em 0px;
+	letter-spacing: 0.02em;
+}
+
+h2 {
+	font-size: 2.25em;
+	color: #993333;
+	margin: 1em 0em 0.4em 0em;
+	line-height: 1.2em;
+	letter-spacing: 0.01em;
+	font-family: Romana, DIN-Regular, optima, "Helvetica Neue",  Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	color: #555;
+	margin: 1em 0em 0.4em 0em;
+	line-height: 1.2em;
+	letter-spacing: 0.04em;
+	font-weight: 300;
+}
+
+h4 {
+	display: inline;
+	font-family: DIN-Regular, "Helvetica Neue", Helvetica;
+	color:#999;
+	font-size: 1em;
+	letter-spacing: 0.025em;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px dotted #BBB;
+	color: #000000;
+	background-image: url("../files/icons/arrow-r_gray.png");
+	background-size: 14px 14px;
+	background-position: right;
+	background-repeat: no-repeat; padding-right: 18px;
+}
+/*a:focus {outline:1px #8a887d dotted;}*/
+a:focus, a:hover {
+	color: #990000; /*#993333;*/
+	background-color:transparent;
+	background-image: url("../files/icons/arrow-r.png");
+	background-size: 14px 14px;
+}
+a[href$='.pdf'] {
+	background-image: url("../files/pdf_gray.png");
+	background-size: 14px 14px;
+	background-position: right;
+	background-repeat: no-repeat; padding-right: 18px;
+}
+a[href$='.pdf']:focus, a[href$='.pdf']:hover {
+	background-image: url("../files/pdf.png");
+	background-size: 14px 14px;
+}
+
+aa.nav {
+	border-bottom: 0px;
+	background-position: right;
+	background-image: url("../files/link_gray.png");
+	background-size: 14px 14px;
+	background-repeat: no-repeat; padding-right: 18px;
+}
+
+aa.nav:hover {
+	color: #993333;
+	cursor: pointer;
+	background-color:transparent;
+	background-image: url("../files/link.png");
+	background-size: 14px 14px;
+}
+
+.offset:before {
+	display: block;
+ 	content: " ";
+	height: 1.5em;      /* Give height of your fixed element */
+  margin-top: -1.5em; /* Give negative margin of your fixed element */
+  visibility: hidden;
+}
+
+body {
+  font-family: DIN-Regular, optima, Helvetica Neue, helvetica, verdana, arial, geneva, sans;
+  font-size: 1em;
+  max-width:900px;
+  margin: 0 auto;
+	color: #000;
+	/* background-color: #ECE9E9; */
+	line-height: 1.5em;
+	hyphens: auto;
+	/* background-image: url("bkg-inv.gif");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left; */
+	background-image: url("BG_gray.jpg");
+	background-repeat: repeat;
+	/* Attempt to work well on cell phones */
+	-webkit-text-size-adjust:none;
+	-ms-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+}
+
+p {line-height: 1.5em; margin: 0 0 1em 0; text-align: justify;}
+
+::selection {
+	background: #a83838; /* WebKit/Blink Browsers */
+	color: #fff;
+}
+::-moz-selection {
+	background: #a83838; /* Gecko Browsers */
+	color: #fff;
+}
+
+@font-face {
+  font-family: 'DIN-Regular';
+  src: url("../files/fonts/din-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: 'Romana';
+  src: url("../files/fonts/romana-becker.woff");
+}
+
+@font-face {
+  font-family: 'DIN-Light';
+  src: url("../files/fonts/din-light-webfont.woff");
+}
+
+@font-face {
+  font-family: 'DIN-Medium';
+  src: url("../files/fonts/din-medium-webfont.woff");
+}
+@font-face {
+  font-family: 'DIN-Bold';
+  src: url("../files/fonts/din-bold-webfont.woff");
+}
+
+/* COMMENTED
+
+@font-face {
+  font-family: 'Nunito';
+  src: url("../files/fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OldStandard';
+  src: url("../files/fonts/old-standard/OldStandard-Regular.otf");
+	src: url("../files/fonts/old-standard/OldStandard-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'ComingSoon';
+  src: url("../files/fonts/ComingSoon.ttf");
+}
+
+*** Old navtable
+table.navtable {
+	padding: 0;
+	top: 10%;
+	text-align: left;
+	line-height: 1.5em;
+	margin-left:0%;
+	font-family:  DIN-Regular, optima, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.025em;
+	font-weight: normal;
+	position: fixed;
+	font-size: 105%;
+	width: 12%;
+	word-break: break-all;
+}
+
+table.navtable th, td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 0.0em solid #ddd;
+}
+
+table.navtable tr:hover{
+	background-color:transparent;
+}
+
+*** Old link table
+a.nav {
+	border-bottom: 0px;
+	color: #993333;
+	font-weight:bold;
+	font-size: 120%;
+}
+
+a.nav:hover {
+	color: #a09883;
+}
+
+*** Fonts
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url("../files/fonts/Rajdhani-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Romana-Med';
+  src: url("../files/fonts/romana-becker-med.woff");
+}
+
+@font-face {
+  font-family: 'Noelan';
+  src: url("../files/fonts/noelan.otf");
+}
+
+@font-face {
+  font-family: 'Fabfelt';
+  src: url("../files/fonts/fabfeltscript-bold.woff");
+}
+
+@media screen and (min-width: 900px) {
+    table.navtable { font-size: 105%; width:150px; }
+}
+
+@media screen and (min-width: 550px) and (max-width: 900px) {
+    table.navtable { font-size: 100%; width:110px; }
+}
+
+@media screen and (min-width: 200px) and (max-width: 550px) {
+    table.navtable { font-size: 80%; width:90px; }
+}
