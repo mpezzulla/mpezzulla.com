@@ -1,9 +1,9 @@
 ul {
 	padding: 0;
 	margin-top: 0.5em;
-	margin-right: 0em;
+	margin-right: 28em;
 	margin-bottom: 1em;
-	margin-left: 1.5em;
+	margin-left: 28em;
 	text-align:justify;
 }
 ul li {margin: 0px 0px 0.5em 0.5em; padding: 0px}
@@ -13,6 +13,10 @@ table {
 }
 
 th, td { border: 0; }
+
+html {
+  scroll-behavior: smooth;
+}
 
 #wrap {
    width:100%;
@@ -54,7 +58,7 @@ th, td { border: 0; }
 	text-align: center;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	font-family: Romana, Didot, optima;
+	font-family: Palatino;
 	font-size: 120%;
 	color: #333;
 	opacity: 0.9;
@@ -96,7 +100,7 @@ h2 {
 	margin: 1em 0em 0.4em 0em;
 	line-height: 1.2em;
 	letter-spacing: 0.01em;
-	font-family: Romana, DIN-Regular, optima, "Helvetica Neue",  Helvetica, Arial, sans-serif;
+	font-family: 'Palatino', didot, optima, "Palatino Linotype";
 	font-weight: bold;
 }
 
@@ -112,7 +116,7 @@ h3 {
 
 h4 {
 	display: inline;
-	font-family: DIN-Regular, "Helvetica Neue", Helvetica;
+	font-family: 'Palatino', didot, optima, "Palatino Linotype";
 	color:#999;
 	font-size: 1em;
 	letter-spacing: 0.025em;
@@ -183,7 +187,6 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: left; */
-	background-image: url("BG_gray.jpg");
 	background-repeat: repeat;
 	/* Attempt to work well on cell phones */
 	-webkit-text-size-adjust:none;
