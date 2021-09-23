@@ -1,3 +1,5 @@
+title-heading: false
+
 # Table of Contents
 1. [Example](#example)
 2. [Example2](#example2)
@@ -8,4 +10,4 @@
 ## Example
 ## Example2
 ## Third Example
-## [Fourth Example](http://www.fourthexample.com) 
+## [Fourth Example](http://www.fourthexample.com)
