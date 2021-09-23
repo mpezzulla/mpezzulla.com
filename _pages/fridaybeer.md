@@ -1,5 +1,5 @@
 ---
-title: {{ Friday Beer }}
+title: fridaybeer
 ---
 # Table of Contents
 1. [Example](#example)
