@@ -1,5 +1,6 @@
 ---
 title: fridaybeer
+title-heading: false
 ---
 # Table of Contents
 1. [Example](#example)
