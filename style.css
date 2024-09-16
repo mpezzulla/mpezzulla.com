@@ -1,0 +1,135 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+}
+
+header p {
+    margin-bottom: 0.5em;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+    font-size: 1.2em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+main {
+    padding: 1em 0;
+}
+
+main section {
+    margin-bottom: 1.5em;
+    padding: 0 1em;
+}
+
+main h2 {
+    color: #008;
+    margin-bottom: 0.5em;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.content p {
+    flex: 1;
+    text-align: justify;
+}
+
+.flag-icon {
+    width: 20px;
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 1em;
+}
+
+ul li a {
+    color: #008;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+
+    .flag-icon {
+        width: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 80%;
+    }
+
+    main section {
+        padding: 0;
+    }
+}
