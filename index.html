@@ -1,285 +1,101 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html lang=en-US>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67830675-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67830675-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-67830675-1');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./files/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="./files/mp.css" media="all" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./files/academicons-1.8.6/css/academicons.min.css"/>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <title>Matteo Pezzulla</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
 
-	  gtag('config', 'UA-67830675-1');
-	</script>
-	<link href="./files/favicon.png" rel="shortcut icon" type="image/x-icon">
-	<link href="./files/mp.css" media="all" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="./files/academicons-1.8.6/css/academicons.min.css"/>
-	<script type='text/javascript'
-		src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'>
-	</script>
-	<script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-$(document).ready(function(){
-	// Add smooth scrolling to all links
-	$("a").on('click', function(event) {
+        /* Header */
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #333;
+            text-align: center;
+        }
 
-		// Make sure this.hash has a value before overriding default behavior
-		if (this.hash !== "") {
-			// Prevent default anchor click behavior
-			event.preventDefault();
+        /* Responsive Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
 
-			// Store hash
-			var hash = this.hash;
+        /* About Section */
+        .about {
+            text-align: center;
+            margin: 20px 0;
+        }
 
-			// Using jQuery's animate() method to add smooth page scroll
-			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
+        .about img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+        }
 
-				// Add hash (#) to URL when done scrolling (default click behavior)
-				window.location.hash = hash;
-			});
-		} // End if
-	});
-});
-</script>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Matteo Pezzulla</title>
+        .about p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        /* Links */
+        .links a {
+            margin: 0 10px;
+            color: #008;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .links a:hover {
+            color: #555;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            .about p {
+                font-size: 1em;
+            }
+            .links a {
+                font-size: 1.2em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-	<div id="navTop" class="fadeMenu" style="display:none;">
-		Matteo Pezzulla
-	</div>
-	<!--background: linear-gradient(to top, rgba(250,245,245,0), rgba(255,249,249,1));
-	<div style="position:absolute; left:0; top:0; width:100%; height:100%; background-color:#333;">-->
-	<div style="position:absolute; left:0; top:0; width:100%; height:100%;
-	background-color:rgba(240,240,250,0.85);" id="home" class="offset">
-		<h1 style="margin-top:36vh; text-align:center; color:#000;" class="offset">Matteo Pezzulla</h1>
-		<div style="width:100%; color:#000; text-align:center; font-family: Palatino Linotype; font-size: 120%; margin-top:2ex;">
-			Assistant Professor in Mechanical Engineering <br>
-			<br>
-			Aarhus University<br>
-			Aarhus<br>
-			Denmark
-			&nbsp;<img src="./files/flags/rect/flag-denmark.png" border="0px" width="20px">
-			<div style="margin-top:10vh;">
-      <a style="text-decoration:none" a href="https://mpezzulla.github.io/mpezzulla.com/files/CV.pdf" class="image fit"><i class="ai ai-cv ai-2x"></i></a>
-			<a style="text-decoration:none" a href="https://scholar.google.com/citations?user=ERcPwMUAAAAJ&hl=en"><i class="ai ai-google-scholar ai-2x"></i></a>
-			<a style="text-decoration:none" a href="https://arxiv.org/a/pezzulla_m_1.html"><i class="ai ai-arxiv ai-2x"></i></a>
-		</div>
-		<!--<div style="position:absolute; left:0; top:0; width:100%; height:100%; z-index:1; background:url(./files/mit_blur_light.jpg);">-->
-	</div>
-<div id="wrap" style="margin: 30vh auto -100vh;">
-
-	<ul>
-			<h2 style="margin-top:0vh; text-align:justify; color:#008;" class="offset">About me</h2>
-			<div id="about" style="width:100%; color:#000; text-align:justify; font-family: Palatino Linotype; font-size: 120%; margin-top:2ex;">
-				<table width="100%">
-				<tr>
-					<td valign="center" width="35%" align="center">
-				<img src="./files/Matt_circle.png" width="200px" style="margin-top:1.5em;"> <br>
-         </td>
-			 </td>
-			 <td valign="top" width="65%">
-       <div style="width:100%; height:100%;color:#000; text-align:justify; font-family: Palatino Linotype; font-size: 120%; margin-top:1ex;">
-         <br>
-				 Hello! I am an Assistant Professor at <a href="https://international.au.dk">Aarhus University</a>.
-         My interests are rooted in fluid-structure interactions and shell mechanics.<br>
-				 I am passionate about continuum mechanics and differential geometry, which I try to study via analytical, numerical, and experimental methods.<br>
-				 Before moving to Denmark, I lived, studied, and worked in Rome, Italy&nbsp;<img src="./files/flags/rect/flag-italy.png" border="0px" width="20px">,
-				 Boston, USA&nbsp;<img src="./files/flags/rect/flag-us.png" border="0px" width="20px">, and Lausanne, Switzerland&nbsp;<img src="./files/flags/rect/flag-switzerland1.png" border="0px" width="20px">.
-				 I am a member of the American Physical Society (APS).
-					</td>
-				</tr>
-		</table>
-
-	</ul>
-
-
-	<!-- <ul>
-   <h2 style="margin-top:0vh; text-align:justify; color:#008;" class="offset">News</h2 >
-		 <div style="margin-top:-2em;"></div>
-		 <!-- <div style="width:100%; height:10%;color:#000; text-align:justify; font-family: Palatino Linotype; font-size: 120%; margin-top:2ex;"> -->
-		 <!-- <br>Nothing interesting at the moment.</div>
-	</ul>
-		 <table width="100%">
-		 <tr>
-			 <td valign="top" width="17%" align="left">
-		 <img src="./files/aarhus_logo.png" width="140px" style="margin-top:2em;">
-      </td>
-		 <td valign="top" width="17%" align="left">
-		 <img src="./files/aarhus_seal.png" width="100px" style="margin-top:1em;">
-			 </td>
-		</td>
-		<td valign="top" width="65%">
-			<div style="margin-top:1em;"></div>
-		  <div style="width:100%; height:10%;color:#555; text-align:justify; font-family: Helvetica; font-size: 80%; margin-top:1ex;">
-      07/2020
-			</div>
-			 <div style="width:100%; height:10%;color:#000; text-align:justify; font-family: Palatino Linotype; font-size: 120%; margin-top:0ex;">
-			 In November, I will join the Department of Engineering at <a href="https://international.au.dk">Aarhus University</a>, Denmark&nbsp;<img src="./files/flags/rect/flag-denmark.png" border="0px" width="20px">,
-			 as an Assistant Professor.
-			 </td>
-		 </tr>
- </table>
-	</ul> -->
-
-
-	<ul>
-	 <h2 style="margin-top:5vh; text-align:justify; color:#008;" class="offset">Friends and collaborators</h2 >
-		 <div style="width:100%; height:48%;color:#000; text-align:justify; font-family: Palatino Linotype; font-size: 110%; margin-top:2ex;">
-
-         <li> <a href="https://blog.espci.fr/jbico/">J. Bico</a>, ESPCI,
-					    France&nbsp;<img src="./files/flags/rect/flag-france.png" border="0px" width="20px"> </li>
-
-				 <li> <a href='https://mazdias.wordpress.com'>M. A. Dias</a>, University of Edinburgh,
-					    Scotland&nbsp;<img src="./files/flags/rect/flag-uk.png" border="0px" width="20px"> </li>
-
-				 <li> <a href='https://gcfer.github.io/'>G. C. Ferrante</a> Ericsson Research,
-					    Sweden&nbsp;<img src="./files/flags/rect/flag-sweden.png" border="0px" width="20px"></li>
-
-				 <li> <a href='http://www.bu.edu/moss/'>D. P. Holmes</a>, Boston University,
-					    USA&nbsp;<img src="./files/flags/rect/flag-us.png" border="0px" width="20px"> </li>
-
-				<li> <a href='https://pgledda.github.io/'>P. G. Ledda</a>, University of Cagliari,
-							 Sardinia&nbsp;<img src="./files/flags/rect/Sardinia.png" border="0px" width="20px"> </li>
-
-				 <li> <a href="https://sites.google.com/a/uniroma1.it/paolanardinocchi/">P. Nardinocchi</a>, Sapienza Università di Roma,
-					    Italy&nbsp;<img src="./files/flags/rect/flag-italy.png" border="0px" width="20px"> </li>
-
-				 <li> <a href="https://blog.espci.fr/benoitroman/">B. Roman</a>, ESPCI,
-					    France&nbsp;<img src="./files/flags/rect/flag-france.png" border="0px" width="20px"> </li>
-
-				 <li> <a href="https://scholar.google.com/citations?user=zPyOqaYAAAAJ&hl=en">N. Stoop</a>, QuantCo,
-					    Switzerland&nbsp;<img src="./files/flags/rect/flag-switzerland1.png" border="0px" width="20px"> </li>
-
-				 <li> <a href="https://sites.google.com/view/luciano-teresi/home">L. Teresi</a>, Università di Roma Tre,
-					    Italy&nbsp;<img src="./files/flags/rect/flag-italy.png" border="0px" width="20px"> </li>
-	</ul>
-
-	 <ul>
-			<h2 style="margin-top:0vh; text-align:justify; color:#008;" class="offset">Publications</h2>
-			<div style="width:100%; height:58%;color:#000; text-align:justify; font-family: Palatino Linotype; font-size: 100%; margin-top:2ex;">
-
-				<li> <img src="./files/new-2c.png" border="0px" width="34px">H. Garg, P. G. Ledda, J. S. Pedersen, and M. Pezzulla.
-					   <a href="https://doi.org/10.1103/PhysRevLett.133.084001">Passive viscous flow selection via fluid-induced buckling</a>.
-					   Phys. Rev. Lett. 133, 084001 (2024)</li>
-
-				<li> K. Barvenik, Z. Coogan, G. Librandi, M. Pezzulla, and E. Tubaldi.
-					   <a href="https://doi.org/10.1002/aisy.202300855">Tactile Sensing and Grasping Through Thin-Shell Buckling</a>.
-					   Adv. Intell. Syst. 2300855 (2024)</li>
-
-				<li> Y. L. Lin, M. Pezzulla, and P. M. Reis.
-					   <a href="https://doi.org/10.1098/rsif.2023.0266">Fluid-structure interactions of bristled wings: The trade-off between weight and drag</a>.
-					   J. R. Soc. Interface 20, 20230266 (2023)</li>
-
-			<li> P. G. Ledda, M. Pezzulla, E. Jambon-Puillet, P.-T. Brun, and F. Gallaire.
-				   <a href="https://doi.org/10.1017/jfm.2022.758">Gravity-driven coatings on curved substrates: a differential geometry approach</a>.
-				   J. Fluid Mech. 949, A38 (2022)</li>
-
-			<li> P. Leroy-Calatayud, M. Pezzulla, A. Keiser, K. Mulleners, and P. M. Reis.
-				   <a href="https://doi.org/10.1103/PhysRevFluids.7.074403">Tapered foils favor traveling-wave kinematics to enhance the performance of flapping propulsion</a>.
-				   Phys. Rev. Fluids 7, 074403 (2022)</li>
-
-		  <li> M. Pezzulla, D. Yan, and P. M. Reis.
-				   <a href="https://doi.org/10.1016/j.jmps.2022.104916">A geometrically exact model for thin magneto-elastic shells</a>.
-					 J. Mech. Phys. Solids 166, 104916 (2022)</li>
-
-			<li> T. G. Sano, M. Pezzulla, and P. M. Reis.
-				   <a href="https://doi.org/10.1016/j.jmps.2021.104739">A Kirchhoff-like theory for hard magnetic rods under three-dimensional geometrically nonlinear deformation</a>.
-					 J. Mech. Phys. Solids 160, 104739 (2022)</li>
-
-			<li> B. Shrimali, M. Pezzulla, S. Poincloux, P. M. Reis, and O. Lopez-Pamies.
-				<a href="https://doi.org/10.1016/j.jmps.2021.104514"> The remarkable bending properties of perforated plates</a>.
-				   J. Mech. Phys. Solids 154, 104514 (2021)</li>
-
-      <li> D. Yan, M. Pezzulla, L. Cruveiller, A. Abbasi, and P. M. Reis.
-				   <a href="https://doi.org/10.1038/s41467-021-22776-y"> Magneto-active elastic shells with tunable buckling strength</a>.
-					 Nat. Commun. 12, 2831 (2021)</li>
-
-      <li> M. Pezzulla, E. F. Strong, F. Gallaire, and P. M. Reis.
-				   <a href="https://doi.org/10.1103/PhysRevFluids.5.084103">Deformation of porous flexible strip in low and moderate Reynolds number flows</a>.
-				   Phys. Rev. Fluids 5, 084103 (2020)</li>
-
-			<li> D. P. Holmes, J.-H. Lee, H. S. Park, and M. Pezzulla.
-					 <a href="https://doi.org/10.1103/PhysRevE.102.023003">Nonlinear buckling behavior of a complete spherical shell under uniform external pressure and homogenous natural curvature</a>.
-					 Phys. Rev. E 102, 023003 (2020)</li>
-
-      <li> D. Yan, M. Pezzulla, and P. M. Reis.
-				   <a href="https://doi.org/10.1016/j.jmps.2020.103923">Buckling of pressurized spherical shells containing a through-thickness defect</a>.
-					 J. Mech. Phys. Solids 138, 103923 (2020)</li>
-
-      <li> M. Pezzulla and P. M. Reis.
-				   <a href="https://doi.org/10.1115/1.4044816">A Weak Form Implementation of Nonlinear Axisymmetric Shell Equations with Examples</a>.
-					 ASME. J. Appl. Mech. 86(12): 124502 (2019)</li>
-
-	    <li> E. F. Strong, M. Pezzulla, F. Gallaire, P. M. Reis, and L. Siconolfi.
-				   <a href="http://dx.doi.org/10.1103/PhysRevFluids.4.084101">Hydrodynamic loading of perforated disks in creeping flows</a>.
-					 Phys. Rev. Fluids 4, 084101 (2019)</li>
-
-	    <li> A. Lee, D. Yan, M. Pezzulla, D. P. Holmes, and P. M. Reis.
-				   <a href="http://dx.doi.org/10.1039/C9SM00901A">Evolution of critical buckling conditions in imperfect bilayer shells through residual swelling</a>.
-					 Soft Matter 15, 6134-6144, (2019) </li>
-
-	    <li> L. Stein-Montalvo, P. Costa, M. Pezzulla, and D. P. Holmes. <a href="http://dx.doi.org/10.1039/C8SM02035C">
-				   Buckling of Geometrically Confined Shells</a>. Soft Matter 15, 1215-1222, (2019)</li>
-
-	    <li> X. Jiang, M. Pezzulla, S. Wei, T. K. Ghosh, and D. P. Holmes.
-				   <a href="http://doi.org/10.1209/0295-5075/122/64003" target="_blank" rel="noopener noreferrer"> Snapping of Bistable, Prestressed Cylindrical Shells</a>.
-					 Europhys. Lett. 122, 64003, (2018)</li>
-
-	    <li> M. Pezzulla, N. Stoop, M. P. Steranka, A. J. Bade, and D. P. Holmes.
-				   <a href="http://doi.org/10.1103/PhysRevLett.120.048002" target="_blank" rel="noopener noreferrer">Curvature-Induced Instabilities of Shells</a>.
-					 Phys. Rev. Lett. 120, 048002, (2018)</li>
-
-     	<li> M. Pezzulla, N. Stoop, X. Jiang, and D. P. Holmes.
-				   <a href="http://doi.org/10.1098/rspa.2017.0087" target="_blank" rel="noopener noreferrer">Curvature-Driven Morphing of non-Euclidean Shells</a>.
-					 Proc. R. Soc. A. 473(2201), 20170087, (2017)</li>
-
-	    <li> M. Pezzulla, G. P. Smith, P. Nardinocchi, and D. P. Holmes.
-				   <a href="http://doi.org/10.1039/C6SM00246C" target="_blank" rel="noopener noreferrer">Geometry and Mechanics of Thin&nbsp;Growing Bilayers</a>.
-					 Soft Matter 12, 4435-4442, (2016)</li>
-
-	    <li> P. Nardinocchi, M. Pezzulla, and L. Teresi.
-				   <a href="http://doi.org/10.1063/1.4938737" target="_blank" rel="noopener noreferrer">Steady and transient analysis of anisotropic swelling in fibered gels</a>.
-					 J. Appl. Phys. 118, 244904, (2015)</li>
-
-	    <li> M. Pezzulla, S. A. Shillig, P. Nardinocchi, and D. P. Holmes.
-				   <a href="http://doi.org/10.1039/C5SM00863H" target="_blank" rel="noopener noreferrer">Morphing of geometric composites via residual swelling</a>.
-					 Soft Matter 11, 5812-5820, (2015)</li>
-
-	    <li> P. Nardinocchi, M. Pezzulla, and L. Teresi.
-				   <a href="http://doi.org/10.1016/j.piutam.2014.12.016" target="_blank" rel="noopener noreferrer">Mechanics of bio-hybrid systems</a>.
-					 Procedia IUTAM 12, pp. 145-153, (2015)</li>
-
-	    <li> P. Nardinocchi, M. Pezzulla, and L. Teresi.
-				   <a href="http://doi.org/10.1039/C4SM02485K" target="_blank" rel="noopener noreferrer">Anisotropic swelling of thin gel sheets</a>.
-					 Soft Matter 11, 1492-1499, (2015)</li>
-
-	    <li> A. Lucantonio, P. Nardinocchi, and M. Pezzulla.
-				   <a href="http://dx.doi.org/10.1098/rspa.2014.0467" target="_blank" rel="noopener noreferrer">Swelling–induced and controlled curving in layered gel beams</a>.
-					 Proc. R. Soc. A 470(2171), 20140467, (2014)</li>
-
-	    <li> A. Lucantonio, P. Nardinocchi, M. Pezzulla, and L. Teresi.
-				   <a href="http://dx.doi.org/10.1088/0964-1726/23/4/045043" target="_blank" rel="noopener noreferrer">Multiphysics of bio–hybrid systems: shape control and electro–induced motion</a>.
-					 Smart Mater. Struct. 23(4), 045043, (2014)</li>
-
-	    <li> P. Nardinocchi, M. Pezzulla, B.J. Akle, M. Guenther, and T. Wallmersperger.
-				   <a href="http://dx.doi.org/10.1117/12.2044470" target="_blank" rel="noopener noreferrer">Actuation and buckling effects in IPMCs</a>.
-					 Proc. SPIE 9056, (2014)</li>
-
-	    <li> Y. Cha, P. Nardinocchi, M. Pezzulla, and M. Porfiri.
-				   <a href="http://dx.doi.org/10.4028/www.scientific.net/AMR.745.119" target="_blank" rel="noopener noreferrer">Giant displacements in IPMC–based structures: a preliminary study</a>.
-					 Adv. Mat. Res. 745, 119–128, (2013)</li>
-
-	    <li> P. Nardinocchi and M. Pezzulla.
-				   <a href="http://dx.doi.org/10.1063/1.4810919" target="_blank" rel="noopener noreferrer">Curled actuated shapes of ionic polymer metal composites</a>.
-					 J. Appl. Phys. 113, 224906, (2013)</li>
-
-	    <li> P. Nardinocchi, M. Pezzulla, and L. Placidi.
-				   <a href="http://dx.doi.org/10.1177/1045389X11417195" target="_blank" rel="noopener noreferrer">Thermodynamically based multiphysic modeling of ionic polymer metal composites</a>.
-					 J. Intel. Mat. Syst. Str. 22(16), 1887–1897, (2011)</li>
+    <div class="container">
+        <h1>Matteo Pezzulla</h1>
+        <div class="about">
+            <img src="./files/Matt_circle.png" alt="Matteo Pezzulla">
+            <p>Assistant Professor in Mechanical Engineering at Aarhus University, Denmark.</p>
+        </div>
+        <div class="links">
+            <a href="https://mpezzulla.github.io/mpezzulla.com/files/CV.pdf" class="image fit"><i class="ai ai-cv"></i> CV</a>
+            <a href="https://scholar.google.com/citations?user=ERcPwMUAAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Google Scholar</a>
+            <a href="https://arxiv.org/a/pezzulla_m_1.html"><i class="ai ai-arxiv"></i> arXiv</a>
+        </div>
+    </div>
 </body>
-
 </html>
