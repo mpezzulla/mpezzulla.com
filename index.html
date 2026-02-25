@@ -41,7 +41,6 @@
     background: var(--white);
     position: relative;
   }
-
   #hero::after {
     content: '';
     position: absolute;
@@ -49,7 +48,6 @@
     height: 1px;
     background: var(--border);
   }
-
   .hero-photo {
     width: 130px; height: 130px;
     border-radius: 50%;
@@ -58,7 +56,6 @@
     border: 3px solid var(--border);
     filter: grayscale(15%);
   }
-
   .hero-name {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2.2rem, 5vw, 3.5rem);
@@ -67,9 +64,7 @@
     line-height: 1.15;
     margin-bottom: 0.75rem;
   }
-
   .hero-title {
-    font-size: 1rem;
     color: var(--muted);
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -77,7 +72,6 @@
     font-size: 0.85rem;
     margin-bottom: 0.4rem;
   }
-
   .hero-inst {
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -85,9 +79,7 @@
     font-size: 1.05rem;
     margin-bottom: 2.5rem;
   }
-
   .hero-links { display: flex; gap: 1.8rem; justify-content: center; }
-
   .hero-links a {
     color: var(--muted);
     text-decoration: none;
@@ -100,7 +92,6 @@
     transition: color 0.2s, border-color 0.2s;
   }
   .hero-links a:hover { color: var(--accent); border-color: var(--accent); }
-
   .scroll-hint {
     position: absolute;
     bottom: 2.5rem;
@@ -114,13 +105,11 @@
 
   /* ── SECTIONS ── */
   section {
-    max-width: 760px;
+    max-width: 820px;
     margin: 0 auto;
     padding: 5rem 2rem;
   }
-
   section + section { border-top: 1px solid var(--border); }
-
   .section-label {
     font-size: 0.72rem;
     letter-spacing: 0.14em;
@@ -131,29 +120,14 @@
   }
 
   /* ── ABOUT ── */
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
   .about-text {
     font-family: 'Playfair Display', serif;
     font-size: 1.15rem;
     line-height: 1.8;
-    color: var(--text);
   }
-
   .about-text a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
   .about-text a:hover { border-color: var(--accent); }
-
-  .about-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1.5rem;
-  }
-
+  .about-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
   .tag {
     font-size: 0.78rem;
     letter-spacing: 0.05em;
@@ -166,27 +140,45 @@
 
   /* ── PUBLICATIONS ── */
   .pub-list { list-style: none; }
-
   .pub-item {
     padding: 1.25rem 0;
     border-bottom: 1px solid var(--border);
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto auto 1fr;
     gap: 1rem;
-    align-items: baseline;
+    align-items: start;
   }
-
   .pub-num {
     font-size: 0.75rem;
     color: var(--border);
     font-weight: 500;
     min-width: 1.5rem;
     text-align: right;
-    padding-top: 0.1em;
+    padding-top: 0.25rem;
   }
-
-  .pub-content { }
-
+  .pub-fig {
+    width: 80px;
+    height: 80px;
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--border);
+    font-size: 0.58rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .pub-fig img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+  }
   .pub-badge {
     display: inline-block;
     font-size: 0.65rem;
@@ -197,49 +189,30 @@
     margin-bottom: 0.4rem;
     font-weight: 500;
   }
-  .badge-new { background: #e8f0fb; color: var(--accent); }
-  .badge-prl { background: #f0ebe3; color: #8a6a3a; }
-  .badge-jfm { background: #ebe3f0; color: #6a3a8a; }
-  .badge-nat { background: #e3f0e8; color: #3a6a4a; }
-  .badge-prf { background: #f0e3e3; color: #8a3a3a; }
+  .badge-new  { background: #e8f0fb; color: var(--accent); }
+  .badge-prl  { background: #f0ebe3; color: #8a6a3a; }
+  .badge-jfm  { background: #ebe3f0; color: #6a3a8a; }
+  .badge-nat  { background: #e3f0e8; color: #3a6a4a; }
+  .badge-prf  { background: #f0e3e3; color: #8a3a3a; }
   .badge-jmps { background: #e3ebe8; color: #3a5a4a; }
-  .badge-other { background: #ebebeb; color: #5a5a5a; }
+  .badge-other{ background: #ebebeb; color: #5a5a5a; }
 
-  .pub-authors {
-    font-size: 0.88rem;
-    color: var(--muted);
-    margin-bottom: 0.2rem;
-  }
-
+  .pub-authors { font-size: 0.88rem; color: var(--muted); margin-bottom: 0.2rem; }
   .pub-title {
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.2rem;
   }
-
   .pub-title a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--border); transition: border-color 0.2s, color 0.2s; }
   .pub-title a:hover { color: var(--accent); border-color: var(--accent); }
-
-  .pub-journal {
-    font-size: 0.82rem;
-    color: var(--muted);
-    font-style: italic;
-  }
-
-  .pub-extra {
-    font-size: 0.78rem;
-    color: var(--accent);
-    margin-top: 0.2rem;
-  }
+  .pub-journal { font-size: 0.82rem; color: var(--muted); font-style: italic; }
+  .pub-extra { font-size: 0.78rem; color: var(--accent); margin-top: 0.2rem; }
+  .pub-extra a { color: inherit; text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  .pub-extra a:hover { border-color: var(--accent); }
 
   /* ── COLLABORATORS ── */
-  .collab-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.75rem;
-  }
-
+  .collab-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.75rem; }
   .collab-item {
     background: var(--white);
     border: 1px solid var(--border);
@@ -248,10 +221,8 @@
     transition: border-color 0.2s, box-shadow 0.2s;
   }
   .collab-item:hover { border-color: var(--accent); box-shadow: 0 2px 12px rgba(74,111,165,0.08); }
-
   .collab-item a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.92rem; }
   .collab-item a:hover { color: var(--accent); }
-
   .collab-inst { font-size: 0.78rem; color: var(--muted); margin-top: 0.15rem; }
 
   /* ── FOOTER ── */
@@ -284,31 +255,30 @@
 <!-- ABOUT -->
 <section id="about">
   <p class="section-label">About</p>
-  <div class="about-grid">
-    <p class="about-text">
-      Hello! I am an Associate Professor at <a href="https://international.au.dk">Aarhus University</a>.
-      My interests are rooted in fluid–structure interactions and shell mechanics.
-      I am passionate about continuum mechanics and differential geometry, which I study via analytical, numerical, and experimental methods.
-      Before moving to Denmark 🇩🇰, I lived, studied, and worked in Rome, Italy 🇮🇹; Boston, USA 🇺🇸; and Lausanne, Switzerland 🇨🇭.
-      I am a member of the American Physical Society (APS).
-    </p>
-    <div class="about-meta">
-      <span class="tag">Fluid–Structure Interactions</span>
-      <span class="tag">Shell Mechanics</span>
-      <span class="tag">Continuum Mechanics</span>
-      <span class="tag">Differential Geometry</span>
-      <span class="tag">Soft Matter</span>
-    </div>
+  <p class="about-text">
+    Hello! I am an Associate Professor at <a href="https://international.au.dk">Aarhus University</a>.
+    My interests are rooted in fluid–structure interactions and shell mechanics.
+    I am passionate about continuum mechanics and differential geometry, which I study via analytical, numerical, and experimental methods.
+    Before moving to Denmark 🇩🇰, I lived, studied, and worked in Rome, Italy 🇮🇹; Boston, USA 🇺🇸; and Lausanne, Switzerland 🇨🇭.
+    I am a member of the American Physical Society (APS).
+  </p>
+  <div class="about-meta">
+    <span class="tag">Fluid–Structure Interactions</span>
+    <span class="tag">Shell Mechanics</span>
+    <span class="tag">Continuum Mechanics</span>
+    <span class="tag">Differential Geometry</span>
+    <span class="tag">Soft Matter</span>
   </div>
 </section>
 
 <!-- PUBLICATIONS -->
 <section id="publications">
   <p class="section-label">Publications</p>
-  <ol class="pub-list" reversed>
+  <ol class="pub-list">
 
     <li class="pub-item">
       <span class="pub-num">32</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-new">New · 2025</span>
         <p class="pub-authors">S. Gennis, M. Pezzulla, and K. H. Jensen</p>
@@ -319,6 +289,7 @@
 
     <li class="pub-item">
       <span class="pub-num">31</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-new">New · 2025</span>
         <p class="pub-authors">M. Taffetani and M. Pezzulla</p>
@@ -329,17 +300,19 @@
 
     <li class="pub-item">
       <span class="pub-num">30</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prl">PRL · 2025</span>
         <p class="pub-authors">P. G. Ledda, H. Garg, V. Østergaard-Clausen, L. Krumenacker Rudzki, A. Madary, and M. Pezzulla</p>
         <p class="pub-title"><a href="https://doi.org/10.1103/ltqy-d53p">Fluid-induced snap-through instability of spherical shells</a></p>
         <p class="pub-journal">Phys. Rev. Lett. 135, 234002 (2025)</p>
-        <p class="pub-extra">Featured in Physics &nbsp;·&nbsp; Editors' Suggestion &nbsp;·&nbsp; Cover Story</p>
+        <p class="pub-extra"><a href="https://physics.aps.org/articles/v18/193">Featured in Physics</a> &nbsp;·&nbsp; Editors' Suggestion &nbsp;·&nbsp; <a href="https://journals.aps.org/prl/issues/135/23/deliverables/front-cover/print">Cover Story</a></p>
       </div>
     </li>
 
     <li class="pub-item">
       <span class="pub-num">29</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prl">PRL · 2024</span>
         <p class="pub-authors">H. Garg, P. G. Ledda, J. S. Pedersen, and M. Pezzulla</p>
@@ -350,6 +323,7 @@
 
     <li class="pub-item">
       <span class="pub-num">28</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Adv. Intell. Syst. · 2024</span>
         <p class="pub-authors">K. Barvenik, Z. Coogan, G. Librandi, M. Pezzulla, and E. Tubaldi</p>
@@ -360,6 +334,7 @@
 
     <li class="pub-item">
       <span class="pub-num">27</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">J. R. Soc. Interface · 2023</span>
         <p class="pub-authors">Y. L. Lin, M. Pezzulla, and P. M. Reis</p>
@@ -370,6 +345,7 @@
 
     <li class="pub-item">
       <span class="pub-num">26</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-jfm">JFM · 2022</span>
         <p class="pub-authors">P. G. Ledda, M. Pezzulla, E. Jambon-Puillet, P.-T. Brun, and F. Gallaire</p>
@@ -380,6 +356,7 @@
 
     <li class="pub-item">
       <span class="pub-num">25</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prf">PRF · 2022</span>
         <p class="pub-authors">P. Leroy-Calatayud, M. Pezzulla, A. Keiser, K. Mulleners, and P. M. Reis</p>
@@ -390,6 +367,7 @@
 
     <li class="pub-item">
       <span class="pub-num">24</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-jmps">JMPS · 2022</span>
         <p class="pub-authors">M. Pezzulla, D. Yan, and P. M. Reis</p>
@@ -400,6 +378,7 @@
 
     <li class="pub-item">
       <span class="pub-num">23</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-jmps">JMPS · 2022</span>
         <p class="pub-authors">T. G. Sano, M. Pezzulla, and P. M. Reis</p>
@@ -410,6 +389,7 @@
 
     <li class="pub-item">
       <span class="pub-num">22</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-jmps">JMPS · 2021</span>
         <p class="pub-authors">B. Shrimali, M. Pezzulla, S. Poincloux, P. M. Reis, and O. Lopez-Pamies</p>
@@ -420,6 +400,7 @@
 
     <li class="pub-item">
       <span class="pub-num">21</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-nat">Nat. Commun. · 2021</span>
         <p class="pub-authors">D. Yan, M. Pezzulla, L. Cruveiller, A. Abbasi, and P. M. Reis</p>
@@ -430,6 +411,7 @@
 
     <li class="pub-item">
       <span class="pub-num">20</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prf">PRF · 2020</span>
         <p class="pub-authors">M. Pezzulla, E. F. Strong, F. Gallaire, and P. M. Reis</p>
@@ -440,6 +422,7 @@
 
     <li class="pub-item">
       <span class="pub-num">19</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prl">PRE · 2020</span>
         <p class="pub-authors">D. P. Holmes, J.-H. Lee, H. S. Park, and M. Pezzulla</p>
@@ -450,6 +433,7 @@
 
     <li class="pub-item">
       <span class="pub-num">18</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-jmps">JMPS · 2020</span>
         <p class="pub-authors">D. Yan, M. Pezzulla, and P. M. Reis</p>
@@ -460,6 +444,7 @@
 
     <li class="pub-item">
       <span class="pub-num">17</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">ASME · 2019</span>
         <p class="pub-authors">M. Pezzulla and P. M. Reis</p>
@@ -470,6 +455,7 @@
 
     <li class="pub-item">
       <span class="pub-num">16</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prf">PRF · 2019</span>
         <p class="pub-authors">E. F. Strong, M. Pezzulla, F. Gallaire, P. M. Reis, and L. Siconolfi</p>
@@ -480,6 +466,7 @@
 
     <li class="pub-item">
       <span class="pub-num">15</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Soft Matter · 2019</span>
         <p class="pub-authors">A. Lee, D. Yan, M. Pezzulla, D. P. Holmes, and P. M. Reis</p>
@@ -490,6 +477,7 @@
 
     <li class="pub-item">
       <span class="pub-num">14</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Soft Matter · 2019</span>
         <p class="pub-authors">L. Stein-Montalvo, P. Costa, M. Pezzulla, and D. P. Holmes</p>
@@ -500,6 +488,7 @@
 
     <li class="pub-item">
       <span class="pub-num">13</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">EPL · 2018</span>
         <p class="pub-authors">X. Jiang, M. Pezzulla, S. Wei, T. K. Ghosh, and D. P. Holmes</p>
@@ -510,6 +499,7 @@
 
     <li class="pub-item">
       <span class="pub-num">12</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-prl">PRL · 2018</span>
         <p class="pub-authors">M. Pezzulla, N. Stoop, M. P. Steranka, A. J. Bade, and D. P. Holmes</p>
@@ -520,6 +510,7 @@
 
     <li class="pub-item">
       <span class="pub-num">11</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Proc. R. Soc. A · 2017</span>
         <p class="pub-authors">M. Pezzulla, N. Stoop, X. Jiang, and D. P. Holmes</p>
@@ -530,6 +521,7 @@
 
     <li class="pub-item">
       <span class="pub-num">10</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Soft Matter · 2016</span>
         <p class="pub-authors">M. Pezzulla, G. P. Smith, P. Nardinocchi, and D. P. Holmes</p>
@@ -540,6 +532,7 @@
 
     <li class="pub-item">
       <span class="pub-num">9</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">J. Appl. Phys. · 2015</span>
         <p class="pub-authors">P. Nardinocchi, M. Pezzulla, and L. Teresi</p>
@@ -550,6 +543,7 @@
 
     <li class="pub-item">
       <span class="pub-num">8</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Soft Matter · 2015</span>
         <p class="pub-authors">M. Pezzulla, S. A. Shillig, P. Nardinocchi, and D. P. Holmes</p>
@@ -560,6 +554,7 @@
 
     <li class="pub-item">
       <span class="pub-num">7</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Procedia IUTAM · 2015</span>
         <p class="pub-authors">P. Nardinocchi, M. Pezzulla, and L. Teresi</p>
@@ -570,6 +565,7 @@
 
     <li class="pub-item">
       <span class="pub-num">6</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Soft Matter · 2015</span>
         <p class="pub-authors">P. Nardinocchi, M. Pezzulla, and L. Teresi</p>
@@ -580,6 +576,7 @@
 
     <li class="pub-item">
       <span class="pub-num">5</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Proc. R. Soc. A · 2014</span>
         <p class="pub-authors">A. Lucantonio, P. Nardinocchi, and M. Pezzulla</p>
@@ -590,6 +587,7 @@
 
     <li class="pub-item">
       <span class="pub-num">4</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Smart Mater. Struct. · 2014</span>
         <p class="pub-authors">A. Lucantonio, P. Nardinocchi, M. Pezzulla, and L. Teresi</p>
@@ -600,6 +598,7 @@
 
     <li class="pub-item">
       <span class="pub-num">3</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Proc. SPIE · 2014</span>
         <p class="pub-authors">P. Nardinocchi, M. Pezzulla, B. J. Akle, M. Guenther, and T. Wallmersperger</p>
@@ -610,6 +609,7 @@
 
     <li class="pub-item">
       <span class="pub-num">2</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">Adv. Mat. Res. · 2013</span>
         <p class="pub-authors">Y. Cha, P. Nardinocchi, M. Pezzulla, and M. Porfiri</p>
@@ -620,6 +620,7 @@
 
     <li class="pub-item">
       <span class="pub-num">1</span>
+      <div class="pub-fig">fig</div>
       <div class="pub-content">
         <span class="pub-badge badge-other">J. Appl. Phys. · 2013</span>
         <p class="pub-authors">P. Nardinocchi and M. Pezzulla</p>
@@ -635,42 +636,15 @@
 <section id="collaborators">
   <p class="section-label">Friends &amp; Collaborators</p>
   <div class="collab-grid">
-    <div class="collab-item">
-      <a href="https://blog.espci.fr/jbico/">F. Gallaire</a>
-      <p class="collab-inst">EPFL, Switzerland 🇨🇭</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://mazdias.wordpress.com">M. A. Dias</a>
-      <p class="collab-inst">University of Edinburgh, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://gcfer.github.io/">G. C. Ferrante</a>
-      <p class="collab-inst">Ericsson Research, Sweden 🇸🇪</p>
-    </div>
-    <div class="collab-item">
-      <a href="http://www.bu.edu/moss/">D. P. Holmes</a>
-      <p class="collab-inst">Boston University, USA 🇺🇸</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://pgledda.github.io/">P. G. Ledda</a>
-      <p class="collab-inst">University of Cagliari, Sardinia 🏴</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://sites.google.com/a/uniroma1.it/paolanardinocchi/">P. Nardinocchi</a>
-      <p class="collab-inst">Sapienza Università di Roma, Italy 🇮🇹</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://blog.espci.fr/benoitroman/">B. Roman</a>
-      <p class="collab-inst">ESPCI, France 🇫🇷</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://scholar.google.com/citations?user=zPyOqaYAAAAJ&hl=en">N. Stoop</a>
-      <p class="collab-inst">QuantCo, Switzerland 🇨🇭</p>
-    </div>
-    <div class="collab-item">
-      <a href="https://sites.google.com/view/luciano-teresi/home">L. Teresi</a>
-      <p class="collab-inst">Università di Roma Tre, Italy 🇮🇹</p>
-    </div>
+    <div class="collab-item"><a href="https://blog.espci.fr/jbico/">F. Gallaire</a><p class="collab-inst">EPFL, Switzerland 🇨🇭</p></div>
+    <div class="collab-item"><a href="https://mazdias.wordpress.com">M. A. Dias</a><p class="collab-inst">University of Edinburgh, Scotland 🏴󠁧󠁢󠁳󠁣󠁴󠁿</p></div>
+    <div class="collab-item"><a href="https://gcfer.github.io/">G. C. Ferrante</a><p class="collab-inst">Ericsson Research, Sweden 🇸🇪</p></div>
+    <div class="collab-item"><a href="http://www.bu.edu/moss/">D. P. Holmes</a><p class="collab-inst">Boston University, USA 🇺🇸</p></div>
+    <div class="collab-item"><a href="https://pgledda.github.io/">P. G. Ledda</a><p class="collab-inst">University of Cagliari, Sardinia <img src="https://mpezzulla.github.io/mpezzulla.com/files/flags/rect/Sardinia.png" width="18px" style="vertical-align:middle; margin-left:2px;"></p></div>
+    <div class="collab-item"><a href="https://sites.google.com/a/uniroma1.it/paolanardinocchi/">P. Nardinocchi</a><p class="collab-inst">Sapienza Università di Roma, Italy 🇮🇹</p></div>
+    <div class="collab-item"><a href="https://blog.espci.fr/benoitroman/">B. Roman</a><p class="collab-inst">ESPCI, France 🇫🇷</p></div>
+    <div class="collab-item"><a href="https://scholar.google.com/citations?user=zPyOqaYAAAAJ&hl=en">N. Stoop</a><p class="collab-inst">QuantCo, Switzerland 🇨🇭</p></div>
+    <div class="collab-item"><a href="https://sites.google.com/view/luciano-teresi/home">L. Teresi</a><p class="collab-inst">Università di Roma Tre, Italy 🇮🇹</p></div>
   </div>
 </section>
 
